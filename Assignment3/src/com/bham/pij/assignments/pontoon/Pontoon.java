@@ -25,21 +25,6 @@ public class Pontoon extends CardGame {
 	@Override
 	public int compareHands(Player hand1, Player hand2) {
 		int respond = 0;
-		/* switch (getRank(hand1)) {
-			case 1:
-			if (getRank(hand2) != 1) {
-				respond = -1;
-			}
-			break;
-			case 2:
-			break;
-			case 3:
-			break;
-			case 4:
-			break;
-			case 0:
-			break;
-		} */
 		if (hand1.getBestNumericalHandValue() == hand2.getBestNumericalHandValue()) {
 			if (hand1.getBestNumericalHandValue() == 21) {
 				switch(hand1.getHandSize()){
@@ -66,9 +51,4 @@ public class Pontoon extends CardGame {
 		}
 		return respond;
 	}
-	/* public byte getRank() {
-		byte rank = 0;
-		rank = ;
-		return rank;
-	} */
 }
