@@ -15,15 +15,14 @@ public abstract class CardGame {
 			players.add(new Player("Player " + String.valueOf(i+1)));	
 		}
 	}
-	
 	public abstract void dealInitialCards();
-	
 	public abstract int compareHands(Player hand1, Player hand2);
-	
 	public Deck getDeck() {
 		return deck;
 	}
-	
+	public Player getPlayer(int i) {
+		return players.get(i);
+	}
 	public int getNumPlayers() {
 		return playerNum;
 	}
